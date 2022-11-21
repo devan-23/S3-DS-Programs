@@ -1,0 +1,61 @@
+#include <stdio.h>
+void main() 
+{
+    int arr[100],front,rear,top,ch,n,k,z,i;
+    rear=front=top=-1;
+    printf("Enter size of array:");
+    scanf("%d",&n);
+    printf("Enter the choice:\n 1 for Stack\n 2 for Queue");
+    scanf("%d",&ch);
+    switch(ch)
+    {
+        case 1:
+        {
+        printf("Press:\n 1 for Push\n 2 for Pop\n 3 for Display\n 4 for Exit");
+        printf("Enter the option");
+        scanf("%d",&k);
+        switch(k)
+        {
+            case 1:
+            if(top==n-1)
+        {
+            printf("Stack overflow");
+            break;
+        }
+        else
+        {
+            top++;
+            printf("Enter the elements to be inserted:");
+            scanf("%d",&z);
+            arr[top]=z;
+        }
+      }
+      }
+            case 2:
+              if(top==-1)
+              {
+                printf("Stack underflow");
+              }
+             else
+             {
+             printf("Popped item is %d",arr[top]);
+             top--;
+             }
+            case 3:
+            {
+             if(top==-1)
+             {
+              printf("Stack underflow");
+             }
+             else
+             {
+               printf("The elements are:");
+               for(i=top;i>=0;i--)
+               {
+                   scanf("%d",arr[i]);
+               }
+              }
+           }
+    case 2:
+    printf("Press\n 1 for Enqueue\n 2 for Dequeue\n 3 for Display\n 4 for Exit")
+       }
